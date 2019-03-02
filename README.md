@@ -21,7 +21,7 @@ build:
         flags: --buildDrafts=true
 deploy:
   steps:
-    - coolbluemelvin/gh-pages:
+    - melvincornelissen/gh-pages:
         token: $GITHUB_TOKEN
         repo: randompaper/randompaper.github.io
         path: public
