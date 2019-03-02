@@ -15,9 +15,10 @@ box: golang:1.5.1
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.15"
-        theme: hugo-paper
-        flags: --buildDrafts=false
+        basedir: "/"
+        version: "0.53"
+        theme: hello-friend-ng
+        flags: --buildDrafts=true
 deploy:
   steps:
     - coolbluemelvin/gh-pages:
