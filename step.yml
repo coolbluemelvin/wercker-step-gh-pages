@@ -1,0 +1,24 @@
+name: gh-pages
+version: 0.3.1
+summary: Deploy to Github Pages
+category: imported
+tags:
+- github-pages
+- gh-pages
+properties:
+- name: path
+  type: string
+  required: false
+  default: ""
+- name: domain
+  type: string
+  required: false
+  default: ""
+- name: repo
+  type: string
+  required: false
+  default: ""
+- name: token
+  type: string
+  required: false
+  default: ""
