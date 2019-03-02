@@ -30,14 +30,12 @@ deploy:
 
 Then set your Github [Personal Access Token](https://github.com/settings/tokens)  as environment variables.
 
-![Deployment variables](http://randompaper.co.s3.amazonaws.com/github.com/coolbluemelvin/wercker-step-gh-pages/deploy-variables.png)
-
 Finally, you will be able to deploy to Github Pages.
 
 ## Options
 
 |name|description|optional|
-|----|-----------|--------|
+|----|:-----------:|--------:|
 |token|Github token|false|
 |repo|Destination repository|true/false|
 |domain|Custom domain|true|
