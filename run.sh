@@ -6,7 +6,7 @@ fi
 
 if [ -n "$WERCKER_GH_PAGES_REPO" ]; then
   repo="$WERCKER_GH_PAGES_REPO"
-elif [ 'github.com' == "$WERCKER_GIT_DOMAIN" ]; then
+elif [ 'github.com' = "$WERCKER_GIT_DOMAIN" ]; then
   repo="$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
 else
   fail "Missing 'repo' for distinguishing target"
@@ -25,7 +25,7 @@ if [ -d "$WERCKER_GH_PAGES_PATH" ]; then
   cd $WERCKER_GH_PAGES_PATH
 fi
 
-if [ -n $WERCKER_GH_PAGES_DOMAIN ]; then
+if [ -n "$WERCKER_GH_PAGES_DOMAIN" ]; then
   info "Generating CNAME for '$WERCKER_GH_PAGES_DOMAIN'"
   echo $WERCKER_GH_PAGES_DOMAIN > CNAME
 fi
@@ -48,7 +48,7 @@ git add -A
 git commit -m "$(curl --silent --fail https://whatthecommit.com/index.txt)"
 result="$(git push $remote master:$branch)"
 
-if [[ $? -ne 0 ]]; then
+if [ $? -ne 0 ]; then
   warning "$result"
   fail "Failed deploying to Github Pages"
 else
