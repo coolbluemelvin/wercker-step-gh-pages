@@ -4,7 +4,7 @@ Deploy to Github Pages with Wercker.
 
 ## Usage
 
-Put __coolbluemelvin/gh-pages__ step into your wercker.yml.
+Put __melvincornelissen/gh-pages__ step into your wercker.yml.
 
 Please make sure your wercker-box contains 'git' command.
 
@@ -40,3 +40,4 @@ Finally, you will be able to deploy to Github Pages.
 |repo|Destination repository|true/false|
 |domain|Custom domain|true|
 |path|Root dir|true|
+|comment|Commit comment|true|
