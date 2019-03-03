@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ ! -n "$WERCKER_GH_PAGES_TOKEN" ]; then
   fail "Missing 'token' for pushing to Github"
