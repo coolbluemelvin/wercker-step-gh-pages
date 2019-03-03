@@ -22,7 +22,7 @@ info "Using branch '$branch'"
 
 if [ -d "$WERCKER_GH_PAGES_PATH" ]; then
   info "Using '$WERCKER_GH_PAGES_PATH' as root dir instead of git root"
-  cd $WERCKER_GH_PAGES_PATH
+  cd $WERCKER_GH_PAGES_PATH || return
 fi
 
 if [ -n "$WERCKER_GH_PAGES_DOMAIN" ]; then
