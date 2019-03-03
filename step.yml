@@ -1,5 +1,5 @@
 name: gh-pages
-version: 0.4.0
+version: 0.4.1
 summary: Deploy to Github Pages
 category: imported
 tags:
