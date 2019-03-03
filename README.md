@@ -34,10 +34,10 @@ Finally, you will be able to deploy to Github Pages.
 
 ## Options
 
-|name      |description             |optional   |
-|----------|:----------------------:|----------:|
-|token     |Github token            |false      |
-|repo      |Destination repository  |true/false |
-|domain    |Custom domain           |true       |
-|path      |Root dir                |true       |
-|comment   |Commit comment          |true       |
+| name       | description             | optional   |
+| ---------- | ----------------------  | ---------- |
+| token      | Github token            | false      |
+| repo       | Destination repository  | true/false |
+| domain     | Custom domain           | true       |
+| path       | Root dir                | true       |
+| comment    | Commit comment          | true       |
