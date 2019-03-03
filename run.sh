@@ -45,7 +45,7 @@ git remote add origin "$remote"
 git fetch origin
 git branch --track master origin/master
 git add -A
-git commit -m "$(curl --silent --fail https://whatthecommit.com/index.txt)"
+git commit -m $WERCKER_GH_PAGES_COMMENT
 result="$(git push $remote master:$branch)"
 
 if [ $? -ne 0 ]; then
