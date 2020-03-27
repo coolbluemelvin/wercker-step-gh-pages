@@ -25,4 +25,4 @@ properties:
 - name: comment
   type: string
   required: false
-  default: "$(curl --silent --fail https://whatthecommit.com/index.txt)"
+  default: "$(curl --silent --fail http://whatthecommit.com/index.txt)"
